@@ -1,0 +1,61 @@
+.footer
+	padding: 52px 0 39px 0
+	&-bottom
+		color: #000
+		background: #fff
+		&__description
+			+reg
+		&__info
+			font-size: 14px
+			&--underline
+				text-decoration: underline
+	&-menu
+		margin-bottom: 29px
+	&-list
+		&__item
+			display: inline-block
+		&__link
+			+medium
+			font-size: 18px
+			text-transform: uppercase
+			text-decoration: underline
+			color: #fff
+			margin-right: 20px
+	&-social
+		&__item
+			display: flex
+			align-items: center
+		&__icon
+			width: 20px
+		&__label
+			+reg
+			font-size: 16px
+			margin-right: 20px
+	&-contact
+		text-align: right
+		&__label
+			+reg
+			font-size: 14px
+			display: block
+			margin-bottom: 12px
+		&__phone
+			+medium
+			font-size: 24px
+			color: #fff
+			display: block
+			margin-bottom: 11px
+		&__description
+			+reg
+			font-size: 14px
+			display: block
+
+@media screen and ( max-width: 767px )
+	.footer
+		&-contact
+			text-align: left
+			margin-top: 30px
+		&-bottom
+			color: #000
+			background: #fff
+			&__description
+				text-align: left !important
